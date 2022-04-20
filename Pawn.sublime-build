@@ -1,0 +1,27 @@
+{
+    "encoding": "Windows 1252",
+    "target":      ["Packages", "User", "exec.py"],
+    "cmd": ["caminho", "${file_name}", "-(+", "-;+"],
+    "variants": [
+        {
+            "cmd": ["caminho", "${file_name}", "-(+", "-;+", "-l"],
+            "name": "Lista"
+        },
+        {
+            "cmd": ["caminho", "${file_name}", "-(+", "-;+", "-d3"],
+            "name": "Debug"
+        },
+        {
+            "cmd": ["caminho", "${file_name}", "-(+", "-;+", "-a"],
+            "name": "ASM"
+        },
+        {
+            "cmd": ["caminho", "${file_name}", "-(+", "-;+", "-r"],
+            "name": "Reference"
+        },
+        {
+            "cmd": ["caminho", "${file_name}", "-(+", "-;+", "-d3", "-r"],
+            "name": "Debug+Reference"
+        }
+    ]
+}
